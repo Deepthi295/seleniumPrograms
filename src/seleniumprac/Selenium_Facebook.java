@@ -15,7 +15,7 @@ public class Selenium_Facebook {
        Selenium_Facebook f1 = new Selenium_Facebook();
        f1.setup();
        f1.createAccount();
-       f1.closeDriver();
+       f1.closeDriver(); 
 	}
 	
 	public void setup() {

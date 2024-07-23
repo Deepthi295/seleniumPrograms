@@ -1,5 +1,7 @@
 package seleniumprac;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,7 +13,7 @@ public class SampleTestClass {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://facebook.com");
 		driver.manage().window().maximize();
-		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
 		
 //         driver.findElement(By.id("email")).sendKeys("deepthi123.com");
